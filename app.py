@@ -95,7 +95,7 @@ def makeWebhookResult(data):
                     {
                         "title": "Condition",
                         "value": "Temp " + condition.get('temp') +
-                                 " " + units.get('temperature'),
+                                 "c" + units.get('temperature'),
                         "short": "false"
                     },
                     {
@@ -131,6 +131,6 @@ def makeWebhookResult(data):
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
 
-    print(int"Starting app on port %d" % port)
-
+print(int int'Starting app on port%d  '%port, end="")
+    
     app.run(debug=False, port=port, host='0.0.0.0')
